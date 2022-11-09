@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+
+
+
+</head>
+<body>
+<main>
+    <h1>Social Media Button </h1>
+    <section>
+        <span class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+        </span>
+        <ul class="social-icons">
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-pinterest"></i>
+                    <span class="tooltip">pinterest</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="tooltip">linkedin</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="tooltip">github</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span class="tooltip">twitter</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>    
+
+<script>
+    const closeIcon = document.querySelector(".close-btn");
+    closeIcon.addEventListener("click",()=>{
+        closeIcon.classList.toggle("open")
+    })
+</script>
+</body>
+</html>
